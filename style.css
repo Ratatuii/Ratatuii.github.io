@@ -1,0 +1,160 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma;
+}
+.container{
+	width: 940px;
+	margin: 0 auto;
+}
+h1, h2 {
+	text-transform: uppercase;
+}
+.center{
+	margin-top: 70px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.header, 
+.button {
+	text-align: center;
+	background: #4e8598;
+	font-weight: bold;
+	color: #fff;
+}
+.header__logo {
+	margin: 0 auto;
+	padding: 50px 0 150px 0;
+	display: inline-block;
+}
+.header__heading{
+	padding: 0 50px 30px 50px;
+	/*margin-bottom: 330px;*/
+}
+.button{
+	padding: 15px 20px;
+	text-decoration: none;
+	border: 2px solid #fff;
+	border-radius: 30px;
+	margin-bottom: 100px;
+}
+.button:hover{
+	background: #2f383b;
+	color: #fff;
+	border: none;
+}
+.header__arrow_block{
+	padding: 200px 0 40px 0;
+	opacity: 0.5;
+}
+.header__arrow{
+	padding: 20px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	opacity: 1;
+}
+.wrapper{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}							
+				  /*Секция_________ОБО МНЕ_________*/
+.about{
+	color: #2f383b;
+}
+.about__mission{
+	width: 400px;
+}
+
+.about__heading_border:after{
+	content: "";
+	height: 2px;
+	display: block;
+	margin-top: 10px;
+	width: 70px;
+	background: #4e8598; 
+}
+.about__list_bold{
+	font-weight: bold;
+	color: #4e8598;
+	margin-right: 30px;
+}
+.about__paragraph{
+	color: #4e8598;
+}
+.about__list{
+	color: rgba(47,56,59,0.48);
+	padding: 20px 0;
+	list-style-type: none;
+}
+.about__achievements ul{
+	padding-top: 10px;
+}
+.about__list:nth-child(1){
+	background: url(img/bug.png) no-repeat left center;
+	margin-left: -55px;
+	margin-top: -20px;
+	padding-left: 55px;
+	padding-top: 10px;
+}
+.about__list:nth-child(2){
+	background: url(img/bell.png) no-repeat left center;
+	margin-left: -55px;
+	padding-left: 55px;
+}
+.about__list:nth-child(3){
+	background: url(img/storm.png) no-repeat left center;
+	margin-left: -45px;
+	padding-left: 45px;
+}
+.about__list:nth-child(4){
+	background: url(img/camera.png) no-repeat left center;
+	margin-left: -55px;
+	padding-left: 55px;
+}
+.advantages{
+	color: #2f383b;
+		font-weight: bold;
+}
+.advantages__item_number{
+	display: flex;
+  	justify-content: space-around;
+  	align-items: center;
+	font-size: 30px;
+
+	border: 1px solid #2f383b;
+	border-radius: 50%;
+	margin: 0 auto;
+	width: 70px;
+  	height: 70px;
+  	max-width: 70px;
+  	max-height: 70px;
+  	margin-bottom: 20px;
+}
+.advantages__item_number:hover{
+	background: #2f383b;
+	color: #fff;
+}
+.advantages__heading {
+	margin-top: 130px;
+	margin-bottom: 40px;
+}
+.advantages__paragraph{
+	font-weight: normal;
+	font-size: 14px;
+	padding-bottom: 40px;
+}
+.advantages__contact{		
+	width: 430px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 150px;
+}
+.footer{
+	background: #2f383b;
+	padding: 60px 0;
+	color: #fff;
+}
