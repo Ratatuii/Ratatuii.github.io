@@ -1,0 +1,189 @@
+html, body, ul {
+    margin: 0;
+    padding: 0;
+    font-family: "Tahoma", sans-serif;
+}
+.container{
+    width: 1250px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.btn{
+    padding: 10px 40px;
+    border: 1px solid #fc8ba3;
+    background: #fff;
+    border-radius: 2px;
+    color: #fc8ba3;
+}
+.button{
+    display: inline-block;
+    padding: 17px 60px;
+    background: #ff4e2e;
+    color: #fff;
+}
+.button:hover{
+    background: #fc745b;
+}
+h2{
+    margin: 0;
+    font-size: 48px;
+    text-align: center;
+    padding: 100px 0 80px 0;
+}       
+p{
+    color: #8993ad;
+    text-align: center;
+}
+                /* ------Шапка сайта------- */
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    height: 100px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+}
+.header__nav a{
+    display: inline-block;
+    padding-right: 25px;
+    font-size: 14px;
+}
+.header__nav a:hover{
+    color: #fc8ba3;
+    text-decoration: underline;
+}
+.header__contact-block{
+    display: flex;
+    align-items: center;
+}
+.header__phone{
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 20px;
+}
+button:hover{
+    background: #fc8ba3;
+    color: #fff;
+}
+              /* ------Секция обо мне------ */
+
+.about-me__heading{
+    margin: 230px 0 0 0;
+    font-size: 80px;
+}
+.about-me__heading-small{
+    margin: 20px 0;
+    font-size: 25px;
+    color: #8993ad;
+    margin-bottom: 50px;
+}
+
+.about-me__button{
+    margin-bottom: 185px;
+}
+#header{
+    background: #fbfbfb url(../img/bg.png) top center no-repeat;
+}
+                /* ------Секция "Что я делаю"------ */
+
+.skills__block{
+    display: flex;
+    justify-content: space-between;
+}
+.skills__item{
+    text-align: center;
+    width: 250px;
+    padding: 10px;
+}
+.wrapp{
+    display: flex;
+    justify-content: center;
+}
+.skills__button{
+    margin: 100px 0;
+}
+
+                /* ------Секция примеры моих работ------ */
+#example{
+    background: #fbfbfb;
+}
+.example__block{
+    display: flex;
+    justify-content: space-around;
+}
+.example__item{
+    width: 370px;
+    /* margin: 0 30px; */
+}
+.example__button{
+    margin: 100px 0;
+}
+                /* ------Секция "Цена"------ */
+#price{
+    background: rgb(255,78,46);
+    padding-left: 200px;
+}
+.price__heading{
+    color: #fff;
+    padding-bottom: 20px;
+    text-align: left
+}
+.price__paragraph{
+    text-align: left;
+    color: #fff;
+    padding-bottom: 100px;
+}
+                /* ------ Секция "Footer"------ */
+#contact{
+    padding: 80px 0;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.contact__nav a{
+    color: #8993ad;
+}
+ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+.contact__phone{
+    padding-left: 30px;
+    background: url(../img/call.png) left center no-repeat;
+}
+.contact__email{
+    padding-left: 30px;
+    background: url(../img/email.png) left center no-repeat;
+}
+.contact__wrap{
+    padding-top: 10px;
+    height: 90px;
+    display: flex;
+    font-size: 22px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contact__social-network a{
+    padding-right: 20px;
+}
+.contact__social-network {
+    padding-top: 30px;
+}
+.contact__btn{
+    padding: 10px 65px;
+}
+footer{
+    margin-top: 80px;
+    height: 80px;
+    background: #31293c;
+    text-align: center;
+    color: #fff;
+    line-height: 80px;
+}

@@ -1,290 +1,124 @@
 <!DOCTYPE html>
-<html lang="Ru">
-
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Тестовый макет строительной компании</title>
-	<!-- добавляем элементы адаптивности  -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-	 crossorigin="anonymous">
-
-	<!-- собственные стили вконце -->
-	<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Home work</title>
 </head>
-
 <body>
-	<header class="header">
-		<div class="container">
-			<div class="wrapper">
-				<a class="header logo" href="#"><img src="img/logo.png" alt="logo"></a>
-				<nav class="header__nav">
-					<ul>
-						<li><a href="#">Инфраструктура</a></li>
-						<li><a href="#">Планировки и цены</a></li>
-						<li><a href="#">Материалы и отделка</a></li>
-						<li><a href="#">Документы</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-				</nav>
-				<div class="header__call call">
-					<a href="tel:+74955442312">+7 (495) 544-23-12</a>
-					<button class="header__request" type="submit">Заказать звонок</button>
-				</div>
-			</div>
-		</div>
-	</header>
-	<section class="main_header">
-		<div class="container">
-			<div class="main_header__cloud">
-				<p><strong>Дом готов</strong>, идёт внутренняя отделка. Срок сдачи: <strong>Февраль 2018</strong></p>
-				<h1 class="main_header__heading">Ваша квартира в новострое ждет вас</h1>
-				<p>Уютные квартиры в центре города и в <strong>5 минутах от р. Волга</strong></p>
-			</div>
-		</div>
-		<div class="form">
-			<span class="form__main_heading">Запишитесь на просмотр прямо сейчас!</span><br>
-			<span class="form__heading">Покажем Вам квартиры в удобное для Вас время</span><br>
-			<form action="#">
-				<input class="form__input" type="text" value="" placeholder="Имя">
-				<input class="form__input" type="tel" value="" placeholder="Телефон">
-				<input class="form__button" type="submit" value="Записаться на просмотр!">
-			</form>
-			<span class="form__remained">Осталось всего <span class="form__remained_five">5</span> квартир!</span>
-		</div>
-	</section>
-	<section class="advanteges">
-		<div class="container">
-			<div class="wrapper__advantages">
-				<div class="avantages__item avantages__item_bottom"><b>5 минут</b> до центра</div>
-				<div class="avantages__item avantages__item_middle"><b>300 метров</b> до Волги</div>
-				<div class="avantages__item avantages__item_top"><b>Экологически чистое</b> место</div>
-				<div class="avantages__item avantages__item_top"><b>Бесплатная кладовка</b> в подвале</div>
-				<div class="avantages__item avantages__item_middle"><b>Бесплатное парковочное место</b></div>
-				<div class="avantages__item avantages__item_bottom"><b>Квартира под ключ:</b> въехал и живи</div>
-			</div>
-		</div>
-	</section>
-	<section class="deadline">
-		<div class="container">
-			<h3 class="deadline__headding">Дом готов. Идёт внутренняя отделка</h3>
-			<h4 class="deadline__headding_small">Срок сдачи: Февраль 2016</h4>
-			<img src="img/icon_section.png" alt="logo__section">
-		</div>
-	</section>
-	<section class="location">
-		<div class="container">
-			<h2 class="location__heading">Идеальное расположение дома</h2>
-			<p class="location__paragraph">Тихий и экологически чистый район</p>
-			<div class="location__photo">
-				<div class="location__photo_item">
-					<img src="img/volga.png" alt="volga">
-					<span><b>Близость к реке</b></span><br>
-					<span>До Волги 300 метров</span>
-				</div>
-				<div class="location__photo_item middle">
-					<img src="img/green_area.png" alt="green_area">
-					<span><b>Зеленые зоны</b></span> <br>
-					<span> Березовая роща и сосновый бор</span>
-				</div>
-				<div class="location__photo_item">
-					<img src="img/atmosphere.png" alt="atmosphere">
-					<span><b>Соседи и атмосфера</b></span><br>
-					<span>Коттеджи и деревенская застройка вокруг</span>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="infrastructure">
-		<div class="container">
-			<h2 class="infrastructure__heading">Развитая инфраструктура</h2>
-			<div class="infrastructure__wrapper">
-				<div class="infrastructure__item">
-					<h4>Социальные объекты</h4>
-					<ul>
-						<li>Волга: 350м, центральный пляж: 900м</li>
-						<li>Авто парковка 5м.</li>
-						<li>Игровая детская площадка 2м.</li>
-						<li>4 продуктовых магазина в пределах 500м.</li>
-						<li>Центр города: 4км.</li>
-						<li>Почта 150007: 600м.</li>
-					</ul>
-				</div>
-				<div class="infrastructure__item">
-					<h4>Образовательные объекты</h4>
-					<ul>
-						<li>Детский сад №173 300м.</li>
-						<li>Школа №46 900м.</li>
-						<li>Школа №50 1300м.</li>
-						<li>Школа №97 1000м.</li>
-						<li>Гимназия №3 2400м</li>
-					</ul>
-				</div>
-				<div class="infrastructure__item">
-					<h4>Транспортные остановки</h4>
-					<ul>
-						<li>Союзная: 300м</li>
-						<li>К-тр.Дружба: 600м</li>
-						<li>Школа 50: 1100м.</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="main-advantages">
-		<div class="container">
-			<div class="main-advantages__wrapper">
-				<div class="main-advantages__item">
-					<p><b>До центра 5 минут на машине</b><br> или общ. транспорте</p>
-				</div>
-				<div class="main-advantages__item">
-					<p><b>3 школы и детский садик</b><br> в шаговой доступности</p>
-				</div>
-				<div class="main-advantages__item">
-					<p><b>Вся необходимая инфрастуктура</b><br> продумана и обеспечена</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="constuction">
-		<div class="container">
-			<h2 class="construction__heading">Продуманная конструкция дома</h2>
-			<div class="construction__wrapper">
-				<div class="construction__item">
-					<h4>Заголовок про стену</h4>
-					<img src="img/brick.png" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eos voluptate autem ipsa ea ab! Sequi, rem
-						maxime sed at.</p>
-				</div>
-				<div class="construction__item">
-					<h4>Заголовок про кровлю</h4>
-					<img src="img/roof.png" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate labore officia eligendi, optio
-						iusto sunt, hic neque ducimus magnam?</p>
-				</div>
-				<div class="construction__item">
-					<h4>Заголовок про канализацию</h4>
-					<img src="img/pipe.png" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam accusantium esse saepe eum. Cumque est libero
-						illo odit obcaecati veritatis?</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="configuration">
-		<div class="container">
-			<h2 class="configuration__heading">Комплектация</h2>
-			<h4>В каждой квартире</h4>
-			<div class="configuration__wrapper">
-				<div class="configuration__item">
-					<ul>
-						<li>
-							<i class="fas fa-check-circle"></i>
-							Газовый котёл: Европейский
-						</li>
-						<li>
-							<i class="fas fa-check-circle"></i>
-							Ванна: Стальная
-						</li>
-						<li>
-							<i class="fas fa-check-circle"></i>
-							Умывальник: Керамический
-						</li>
-						<li>
-							<i class="fas fa-check-circle"></i>
-							Унитаз: Керамический
-						</li>
-						<li>
-							<i class="fas fa-check-circle"></i>
-							Газовая плита: Четырех конфорочная
-						</li>
-					</ul>
-				</div>
-				<div class="configuration__item">
-					<ul>
-						<li>
-							<i class="fas fa-check-circle"></i>
-							Балкон: Застекленный
-						</li>
-						<li>
-							<i class="fas fa-check-circle"></i>
-							Отделка пола: Линолеум
-						</li>
-						<li>
-							<i class="fas fa-check-circle"></i>
-							Отделка пола в с/у: Плитка
-						</li>
-						<li>
-							<i class="fas fa-check-circle"></i>
-							Отделка стен: Водоэмульсионная краска
-						</li>
-					</ul>
-				</div>
-				<div class="configuration__item">
-					<ul>
-						<li>
-							<i class="fas fa-check-circle"></i>
-							Дверь входная: Стальная
-						</li>
-						<li>
-							<i class="fas fa-check-circle"></i>
-							Двери межкомнатные: Деревянные
-						</li>
-						<li>
-							<i class="fas fa-check-circle"></i>
-							Окна: ПВХ
-						</li>
-						<li>
-							<i class="fas fa-check-circle"></i>
-							Отделка стен в с/у: Частично плитка керамическая
-						</li>
-						<li>
-							<i class="fas fa-check-circle"></i>
-							Отделка потолков: Водоэмульсионная краска
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="documents">
-		<div class="container">
-			<h1 class="documents__heading">У нас есть все необходимые документы</h1>
-			<span>Обеспечивающие надежность и Вашу защиту</span>
-			<div class="documents__wrapper">
-				<img src="img/declare.png" alt="">
-				<img src="img/license.png" alt="">
-				<img src="img/dogovor.png" alt="">
-				<img src="img/svid.png" alt="">
-			</div>
-		</div>
-	</section>
-	<footer class="footer">
-		<div class="container">
-			<div class="footer__wrapper">
-				<div class="footer__item">
-					<a class="footer logo" href="#"><img src="img/footer_logo.png" alt="logo"></a>
-				</div>
-				<div class="footer__item">
-					<br>
-					<span> <s>&#169;2018 Все права защищены</s></span><br>
-					<span> <s>Политика конфиденциальн ости</s></span>
-				</div>
-				<div class="footer__item">
-					<address>
-						Адрес офиса: <br>Ярославская область<br>р-н Заволжский, ул.3-я Тверицкаяд.32<br>
-						<b>E-mail: </b><a href="mailto:info@sitename.ru"> info@sitename.ru</a>
-					</address>
-				</div>
-				<div class="footer__call call"> <a href="tel:+74955442312">+7 (495) 544-23-12</a>
-					<button class="footer__request" type="submit">Заказать звонок</button>
-				</div>
-			</div>
-		</div>
-	</footer>
+    <section id="header">
+        <div class="container">
+            <header class="header">
+                <nav class="header__nav">
+                    <a href="#skills">Услуги</a>
+                    <a href="#example">Портфолио</a>
+                    <a href="#price">Стоимость</a>
+                </nav>
+                <div class="header__contact-block">
+                    <span class="header__phone">+7 (499) 995-55-77 </span>
+                    <button class="btn">Заказать звонок</button>
+                </div>
+            </header>
+            <div class="about-me">
+                <h1 class="about-me__heading">Дмитрий Алексеев</h1>
+                <h5 class="about-me__heading-small">Frontend-разработчик и веб-верстальщик</h5>
+                <a href="#" class="about-me__button button">Узнать больше</a>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h2>Что я делаю</h2>
+            <div class="skills__block">
+                <div class="skills__item">
+                    <img src="./img/tools-and-utensils.png" alt="Верстка лендинг–страниц и сайтов">
+                    <p>Вёрстка лендинг–страниц и сайтов любой сложности</p>
+                </div>
+                <div class="skills__item">
+                    <img src="./img/responsive.png" alt="Адаптивная верстка">
+                    <p>Адаптивная вёрстка под все браузеры и устройства</p>
+                </div>
+                <div class="skills__item">
+                    <img src="./img/programming.png" alt="Front-end программирование">
+                    <p>Frontend–разработка и программирование</p>
+                </div>
+                <div class="skills__item">
+                    <img src="./img/coding.png" alt="Поддержка старого кода">
+                    <p>Исправление и доработка существующей вёрстки</p>
+                </div>
+            </div>
+            <div class="wrapp">
+                <a href="#" class="skills__button button">Узнать стоимость</a>
+            </div>
+        </div>
+    </section>
+    <section id="example">
+        <div class="container">
+            <h2>Примеры моих работ</h2>
+            <div class="example__block">
+                <div class="example__item">
+                    <a href="#">
+                        <img src="./img/psyhology.png" alt="Сайт психолого Веры Антоновой">
+                        <p>Сайт психолога Веры Антоновой</p>
+                    </a> 
+                    
+                </div>
+                <div class="example__item">
+                    <a href="#">
+                        <img src="./img/kids.png" alt="Сайт магазина детской одежды">
+                        <p>Сайт магазина детской одежды</p>
+                    </a> 
+                    
+                </div>
+                <div class="example__item">
+                    <a href="#">
+                        <img src="./img/fish.png" alt="Сайт магазина «Рыболов»">
+                        <p>Сайт магазина «Рыболов»</p>
+                    </a> 
+                </div>
+            </div>
+            <div class="wrapp">
+                <a href="#" class="example__button button">Заказать проект</a>
+            </div>
+        </div>
+    </section>  
+    <section id="price">
+        <div class="container">
+            <h2 class="price__heading">Адаптивная вёрстка под все устройства <br> и браузеры от 1000 рублей всего за 4 часа.*</h2>
+            <p class="price__paragraph">* Срок и стоимость могут отличаться от заявленных и рассчитываются  индивидуально, <br>в зависимости от сложности задач.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="wrapper">
+                <div class="contact__nav">
+                    <ul>
+                        <li><a href="#skills">Услуги</a></li>
+                        <li><a href="#example">Портфолио</a></li>
+                        <li><a href="#price">стоимость</a></li>
+                    </ul> 
+                </div>
+                <div class="contact__wrap">
+                       <span class="contact__phone">+7 (499) 995-77-55</span> <br> 
+                        <span class="contact__email">dmitry@alekseev.com</span>
+                </div>
+                <div class="contact__block">
+                    <button class="contact__btn btn">Заказать звонок</button>
+                    <div class="contact__social-network">
+                        <a href="https://vk.com/feed" target="_blanlk"><img src="img/vk.png" alt="Вконтакте"></a>
+                        <a href="https://www.facebook.com/" target="_blanlk"><img src="img/facebook-logo.png" alt="Facebook"></a>
+                        <a href="https://twitter.com/" target="_blanlk"><img src="img/twitter.png" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/" target="_blanlk"><img src="img/instagram.png" alt="Instagram"></a>      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <span class="footer__copyright">© Дмитрий Алексеев, 2016 – 2018</span>
+    </footer>    
 </body>
-
 </html>
