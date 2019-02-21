@@ -147,6 +147,7 @@ a{
     width: 624px;
     background: #fff;
     color: #263238;
+    padding-bottom: 50px;
 }
 .languages img{
     width: 120px;
@@ -239,7 +240,17 @@ a{
     padding-right: 5px;
 }
 
-
+footer{
+    height: 80px;
+    text-align: center;
+    background: #172024;
+}
+.copyright{
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 10px;
+    line-height: 80px;
+}
 
 
 
@@ -277,5 +288,13 @@ a{
         width: 70px;
         font-size: 32px;
         height: 70px;
+    }
+    footer{
+
+    }
+    .copyright{
+        letter-spacing: 4gs px;
+        font-size: 15px;
+
     }
 }
