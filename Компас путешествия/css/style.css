@@ -1,0 +1,504 @@
+body{
+    font-family: "Museo Sans Cyrl 900";
+}
+a:hover{
+    text-decoration: none;
+}
+header{
+    background: url(../img/main_bg.png) no-repeat top;
+    background-size: cover;
+}
+/* modal window */
+
+#modal_form {
+	width: 300px; 
+	height: 350px; /* Рaзмеры дoлжны быть фиксирoвaны */
+	border-radius: 5px;
+	border: 3px #000 solid;
+	background: #fff;
+	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+	top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+	left: 50%; /* пoлoвинa экрaнa слевa */
+	margin-top: -150px;
+	margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+	display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+	opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+	z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+	padding: 20px 10px;
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+#modal_form #modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+}
+.wrap{
+    padding: 20px; 
+}
+.question__form_modal input{
+    margin-bottom: 10px;
+    background: #2cd3e9;
+    border: none;
+    width: 100%;
+}
+.question__form_modal input:hover{
+    background: #90f2ff;
+}
+.order{
+    display: block;
+    padding: 10px 30px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    background: #fff;
+    color: #000;
+    margin-top: 20px;
+    border: 1px solid #90f2ff;
+}
+.order__now{
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+/* Пoдлoжкa */
+#overlay {
+	z-index:3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	position:fixed; /* всегдa перекрывaет весь сaйт */
+	background-color:#000; /* чернaя */
+	opacity:0.8; /* нo немнoгo прoзрaчнa */
+	-moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%; /* рaзмерoм вo весь экрaн */
+	top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+	left:0;
+	cursor:pointer;
+	display:none; /* в oбычнoм сoстoянии её нет) */
+}
+#modal_form input{
+    padding: 10px;
+}
+
+
+.wrapp{
+     background-image: -moz-linear-gradient( 130deg, rgb(0,0,0) 0%, rgba(0,80,113, 0.69) 100%);
+     background-image: -webkit-linear-gradient( 130deg, rgb(0,0,0) 0%, rgba(0,80,113, 0.69) 100%);
+     background-image: -ms-linear-gradient( 130deg, rgb(0,0,0) 0%, rgba(0,80,113, 0.69) 100%);
+}
+.active{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+  
+.header{
+    height: 78px;
+    background-color: rgba(0, 0, 0, 0.23);
+}
+.header__nav{
+    line-height: 78px;
+    margin-left: 20px;
+
+}
+.header__nav a{
+    color: #fff;
+    padding: 10px;
+    letter-spacing: 0.1px;
+    font-weight: 900;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.header__nav a:hover{
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+.header__contact{
+    padding: 17px 0;
+    font-weight: 900;
+    padding-left: 40px;
+}
+.header__contact_phone{
+    color: #fff;
+}
+.header__contact_phone:hover{
+    text-decoration: none;
+    color: #bbb;
+}
+.header__contact{
+    background: url(../img/phone_ico.png) no-repeat left center;
+}
+
+.first-block{
+    font-family: "Museo Sans Cyrl 900";
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 200px 0 80px 0;
+    color: #fff;
+    text-shadow: 0px 0px 46px rgba(0, 0, 0, 0.31);
+}
+
+.first-block__heading{
+    font-size: 90px;
+    letter-spacing: 20px;
+}
+.first-block__subtitle{
+    font-size: 51px;
+    letter-spacing: 15px;
+}
+.first-block__arrow{
+    font-size: 35px;
+    margin-top: 150px;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+}
+.arrow a{
+    color: #fff;
+    display: block;
+    text-align: center;
+    border: 3px #fff dotted;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.first-block__arrow a{
+    width: 55px;
+    height: 55px;
+}
+.first-block__arrow a:hover{
+    color: #eee;
+}
+
+.heading-h2{
+    font-size: 42px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* Advantages */
+.advantages__heading{
+    padding-bottom: 70px;
+}
+#advantages{
+    padding: 90px 0;
+}
+.advantages__item{
+    color: #313131;
+    text-align: center;
+    padding:  55px 30px;
+    height: 360px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 1px 1.732px 4px 0px rgba(149, 147, 147, 0.33);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.advantages__title{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px 0 10px 0;
+    text-transform: uppercase;
+ 
+}
+.advantages__title:after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+    height: 2px;
+    margin-top: 20px;
+    background: #c6c6c6;
+}
+  
+
+/* Переезд в Болгарию */
+
+#move{
+    background: url(../img/rakushki_bg.png) no-repeat top;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 75px 0 100px 0;
+}
+
+.move__quote_paragraph{
+    font-style: italic;
+    font-size: 18px;
+    padding-top: 50px;
+}
+.move__quote_nickname{
+    text-transform: uppercase;
+    font-weight: 900;
+    display: inline-block;
+    padding-bottom: 40px;
+}
+.move__question{
+    text-transform: uppercase;
+    font-size: 19px;
+}
+.move__subtitle{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 23px;
+    padding-top: 10px;
+}
+.move__answer-block{
+    width: 770px;
+    padding: 65px;
+    background: url(../img/dotted_blocks.png) no-repeat center;
+    margin: 0 auto;
+}
+.move__title{
+    font-size: 37px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 50px;
+}
+.move__conditions{
+    font-size: 18px;
+    display: inline-block;
+    letter-spacing: 4px;
+    padding-bottom: 50px;
+}
+
+.btn__learn-more{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 30px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.move__button{
+    border: 2px solid #fff;
+    color: #fff;
+}
+.move__button:hover{
+    color: #000;
+}
+
+/* Недвижимость и транспортные услуги */
+
+#transport{
+    background: url(../img/transport_bg.png) top center no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+.transport__title{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+    padding-top: 50px;
+}
+.transport__block{
+    background: #f4f4f4;
+    text-align: center;
+    font-size: 17px;
+    box-shadow: 1px 1.732px 4px 0px rgba(149, 147, 147, 0.33);
+}
+.transport__block p{
+    color: #313131;
+}
+.transport__block_top{
+    margin-top: 130px;
+    position: relative;
+    z-index: 2;
+    padding: 0 55px;
+}
+.transport__block_bottom{
+    padding: 45px 30px;
+}
+.transport__paragraph{
+    padding: 20px 0 45px 0;
+    
+}
+.transport__button{
+    border: 3px solid #23aae2;
+    color: #23aae2;
+    margin-top: 60px;
+    display: inline-block;
+
+}
+.transport__button:hover{
+    border: 3px solid #000;
+    color: #000;
+}
+.transport__image{
+    position: absolute;
+}
+.transport__image_1{
+    left: 50%;
+    top: 0;
+    margin-left: -94px;
+    z-index: 2;
+}
+.transport__image_2{
+    top: 70px;
+    left: 52%;
+    z-index: 2;
+}
+.transport__image_3{
+    z-index: 1;
+    left: 28%;
+    top: 60px;
+}
+.transport__image_circle{
+    top: 350px;
+    left: 50%;
+    z-index: 2;
+    margin-left: -30px;
+}
+
+/* Отзывы */
+
+#feedback{
+    padding: 90px 0;
+}
+.feedback__title{
+    padding-bottom: 100px;
+}
+.owl-carousel{
+    
+}
+.item{
+    padding: 50px 40px 50px 130px;
+}
+.owl-carousel__name{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    padding-right: 45px;
+
+}
+.owl-carousel__contact{
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: start;
+    line-height: 26px;
+    margin-right: 140px;
+    color: #23aae2;
+    font-weight: bold;
+}
+.owl-carousel__city{
+    line-height: 26px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #23aae2;
+}
+.owl-carousel__paragraph{
+    font-size: 14px;
+    color: #363636;
+    padding-top: 30px;
+    font-style: italic;
+}
+.owl-carousel__img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 60px;
+    left: 10px;
+}
+
+/* форма консультации   */
+#question{
+    text-align: center;
+    padding: 85px 0;
+    background: url(../img/confusing-background.png) no-repeat top center;
+    background-size: cover;
+}
+.question_title{
+    color: #fff;
+}
+.question__free{
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-size: 21px;
+    color: #fff;
+}
+.question__arrow a{
+    font-size: 20px;
+    margin:  35px 0;
+    width: 35px;
+    height: 35px;
+
+}
+.question__form input{
+    height: 65px;
+    width: 100%;
+    padding: 0 35px;
+    background-color: rgb(48, 194, 255);
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 35px 0px rgba(14, 14, 14, 0.3);
+    border-radius: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.question__form input:hover{
+    background-color: rgba(0, 0, 0, 0.23);
+    color: #000;
+}
+.question__form input:focus{
+    background-color: rgb(7, 92, 126);
+}
+
+.question__button{
+    display: block;
+    margin-top: 5px;
+    border: 2px solid #fff;
+    width: 100%;
+    color: #fff;
+}
+.question__button:hover{
+    border: 2px solid #000f;
+    color: #000;
+}
+
+
+/* footer */
+
+
+#footer{
+    color: #fff;
+    /* height: 90px; */
+    background-color: rgb(35, 170, 226);
+    box-shadow: 0px 13px 131px 0px rgba(0, 0, 0, 0.26);
+}
+#footer a{
+    color: #fff;
+}
+
+.footer__confiden{
+    line-height: 77px;
+}
+.footer__copyright{
+    line-height: 77px;
+}
+.footer__contact{
+    font-weight: bold;
+    padding-left: 35px;
+    background: url(../img/Phone_footer.png) no-repeat left ;
+    margin-top: 14px;
+}
