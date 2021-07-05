@@ -730,6 +730,10 @@ body{
 .top__title{
     margin-bottom: 54px;
 }
+.top__card{
+    display: flex;
+    flex-direction: column;
+}
 .top__cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -743,6 +747,11 @@ body{
     padding: 12px 19px;
     background-color: #006DFE;
     transition: .2s all;
+    max-width: 118px;
+    margin: auto 0 0 0;
+}
+.top__card-link:hover{
+    opacity: 60%;
 }
 .top__card-pic{
     margin-bottom: 45px;
@@ -752,9 +761,7 @@ body{
     line-height: 24px;
     margin-bottom: 31px;
 }
-.top__card-link:hover{
-    opacity: 60%;
-}
+
 .top__card-pic{
     position: relative;
 }
