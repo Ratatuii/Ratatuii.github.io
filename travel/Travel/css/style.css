@@ -437,6 +437,12 @@ img{
     top: 0;
     left: 0;
     width: 100%;
+    transition: .2s linear;
+    padding-bottom: 20px;
+    z-index: 999;
+}
+.header_active{
+    background: #0E1D28;
 }
 body{
     font-family: 'Lato';
@@ -451,7 +457,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
-    padding-top: 56px;
+    padding-top: 36px;
 }
 .header__list{
     display: flex;
