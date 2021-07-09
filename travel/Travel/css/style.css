@@ -407,7 +407,7 @@ src: local(''),
     padding: 0 15px;
 }
 img{
-    /* min-width: 100%; */
+    /* max-width: 100%; */
     height: auto;
 }
 .container_full{
@@ -666,20 +666,24 @@ body{
     overflow: hidden;
 }
 .places__item_size-lg{
+
     grid-column: span 3;
 }
+
 .places__item_size-sm{
     grid-column: span 2;
+
 }
 .places__card-pic_size-lg{
-    height: 354px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .places__card-pic_size-sm{
     height: 283px;
 }
 .places__card-pic{
     width: 100%;
-    object-fit: cover;
     transition: .2s all;
 }
 .places__item:after{
@@ -820,7 +824,7 @@ body{
     left: 0;
     width: 100%;
     background: rgba(21, 24, 36, 0.6);
-    padding: 16px 25px;
+    padding: 11px 25px 16px ;
     justify-content: flex-end;
 }
 .top__stats-title{
@@ -976,15 +980,57 @@ body{
     .footer__logo{
         text-align: left;
     }
-    .footer__logo-pic{
-        /* width: 100%; */
-    }
     .footer {
         padding: 50px 0;
     }
 }
 
 @media screen and (max-width: 767px){
+    .header__wrapper {
+        padding-top: 20px;
+    }
+    .header__nav-close {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 19px;
+        right: 20px;
+        z-index: 11;
+    }
+    .title__intro {
+        padding-top: 80px;
+        max-width: 619px;
+        margin-bottom: 22px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .subtitle__intro {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
+    .search-form__field {
+        margin-bottom: 20px;
+        margin-right: 0;
+        padding-bottom: 12px;
+        background: transparent url(../img/circle.svg) no-repeat left 5px;
+        background-size: 15px;
+        padding-left: 30px;
+        width: 280px;
+    }
+    .search-form__field::placeholder {
+        font-size: 16px;
+    }
+    .search-form__submit {
+        padding: 10px 39px;
+        font-size: 16px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .subtitle__intro {
+        max-width: 546px;
+        margin-bottom: 40px;
+    }
     .header__burger{
         display: block;
     }
@@ -999,13 +1045,11 @@ body{
         padding: 75px;
         transform: translateX(100%);
         transition: .2s linear;
-
     }
     .header__nav_active{
         transform: translateX(0);
 
     }
-    
     .header__item{
         width: 100%;
         margin-right: 0;
@@ -1018,14 +1062,6 @@ body{
         font-size: 42px;
         line-height: 48px;
     }
-    .header__nav-close{
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        top: 36px;
-        right: 20px;
-        z-index: 11;
-    }
     .header__nav-close-line{
         display: block;
         height: 2px;
@@ -1033,7 +1069,6 @@ body{
         background-color: #fff;
         position: absolute;
         top: 50%;
-
     }
     .header__nav-close-line:first-child{
         transform: translateY(-50%) rotate(45deg);
@@ -1041,8 +1076,87 @@ body{
     .header__nav-close-line:last-child{
         transform: translateY(-50%) rotate(-45deg);
     }
-
-
+    .benefits__card-pic {
+        padding-bottom: 15px;
+    }
+    .benefits__card-title {
+        padding-bottom: 15px;
+    }
+    .benefits__card-disc {
+        padding-bottom: 15px;
+    }
+    .benefits__card{
+        grid-column: span 3;
+    }
+    .benefits__cards {
+        padding: 0 25px;
+        grid-row-gap: 40px;
+        margin-bottom: 60px;
+    }
+    .section-title::after{
+        width: 35%;
+        height: 2px;
+    }
+    .section-title{
+        margin-bottom: 25px;
+    }
+    .places__item-title {
+        font-size: 32px;
+        line-height: 60px;
+    }
+    .places__view-all {
+        margin-bottom: 25px;
+    }
+    .places__card-pic_size-lg, .places__card-pic_size-sm{
+        height: 240px;
+    }
+    .places {
+        padding-bottom: 60px;
+    }
+    .places__caption {
+       
+        margin-bottom: 0;
+    }
+    .tours{
+        margin-bottom: 40px;
+    }
+    .tours__tour{
+        grid-row-gap: 10px;
+        margin-bottom: 40px;
+    }
+    .tour__pic, .tour__info {
+        grid-column: span 4;
+    }
+    .tour__pic-mob-first{
+        grid-row-start: -1;
+    }
+    .top__card {
+        grid-column: span 6;
+    }
+    .top {
+        margin-bottom: 60px;
+    }
+    .top__card-desc {
+        margin-bottom: 15px;
+    }
+    .footer__logo {
+        width: 100%;
+        text-align: center;
+    }
+    .footer__nav {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .footer__menu-title{
+        margin-top: 30px;
+    }
+    .top__card-stats{
+        padding: 7px 25px 10px ;
+    }
+    .footer {
+        padding: 40px 0x;
+    }
 }
 
 /* Media end */
