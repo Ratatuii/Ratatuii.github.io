@@ -624,7 +624,7 @@ body{
    display: grid;
    -ms-grid-columns: 1fr 55px 1fr 55px 1fr;
    grid-template-columns: repeat(3, 1fr);
-   grid-column-gap: 55px;
+   column-gap: 55px;
    padding: 0 100px;
    margin-bottom: 131px;
 }
@@ -711,8 +711,8 @@ body{
    grid-template-columns: repeat(6, 1fr);
    -ms-grid-rows: repeat 10px (2, 1fr);
    grid-template-rows: repeat (2, 1fr);
-   grid-column-gap: 10px;
-   grid-row-gap: 10px;
+   column-gap: 10px;
+   row-gap: 10px;
    
 }
 .places__cards > *:nth-child(1){
@@ -852,7 +852,7 @@ body{
    display: grid;
    -ms-grid-columns: 1fr 77px 1fr 77px 1fr 77px 1fr;
    grid-template-columns: repeat(4, 1fr);
-   grid-column-gap: 77px;
+   column-gap: 77px;
    margin-bottom: 70px;
 }
 .tours__item{
@@ -924,8 +924,8 @@ body{
    display: grid;
    -ms-grid-columns: 1fr 57px 1fr 57px 1fr 57px 1fr 57px 1fr 57px 1fr;
    grid-template-columns: repeat(6, 1fr);
-   grid-column-gap: 57px;
-   grid-row-gap: 57px;
+   column-gap: 57px;
+   row-gap: 57px;
 }
 .top__card-link{
    text-decoration: none;
@@ -1082,7 +1082,7 @@ body{
    }
    .benefits__cards {
        padding: 0 25px;
-       grid-column-gap: 20px;
+       column-gap: 20px;
        margin-bottom: 60px;
    }
    .benefits-title{
@@ -1104,8 +1104,8 @@ body{
        padding-bottom: 20px;
    }
    .tours__tour {
-       grid-column-gap: 30px;
-       grid-row-gap: 77px;
+       column-gap: 30px;
+       row-gap: 77px;
    }
    .tour__info {
        padding-left: 0;
@@ -1119,15 +1119,15 @@ body{
        margin-bottom: 10px;
    }
    .tours__tour {
-       grid-row-gap: 30px;
+       row-gap: 30px;
        margin-bottom: 30px;
    }
    .tours {
        margin-bottom: 60px;
    }
    .top__cards {
-       grid-row-gap: 50px;
-       grid-column-gap: 25px;
+       row-gap: 50px;
+       column-gap: 25px;
    }
    .top__card {
        -ms-grid-column-span: 3;
@@ -1272,7 +1272,7 @@ body{
    }
    .benefits__cards {
        padding: 0 25px;
-       grid-row-gap: 40px;
+       row-gap: 40px;
        margin-bottom: 60px;
    }
    .section-title::after{
@@ -1303,7 +1303,7 @@ body{
        margin-bottom: 40px;
    }
    .tours__tour{
-       grid-row-gap: 10px;
+       row-gap: 10px;
        margin-bottom: 40px;
    }
    .tour__pic, .tour__info {
@@ -1311,8 +1311,8 @@ body{
        grid-column: span 4;
    }
    .tour__pic-mob-first{
-       -ms-grid-row: -1;
-           grid-row-start: -1;
+        -ms-grid-row: -1;
+        grid-row-start: -1;
    }
    .top__card {
        -ms-grid-column-span: 6;
