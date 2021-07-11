@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container ">
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class='header__item'>
@@ -28,7 +28,25 @@
                         <a href="#" class="header__link">Contacts</a>
                     </li>
                 </ul>
+                <div class="header__nav-close">
+                    <span class="header__nav-close-line"></span>
+                    <span class="header__nav-close-line"></span>
+                </div>
+                <div class="header__lang header__lang-mobile">
+                    <a href="#" class="header__lang-ru">RU</a>
+                    <span class="header__lang-sep">|</span>
+                    <a href="#" class="header__lang-eng">ENG</a>
+                </div>
             </nav>
+            <div class="header__burger burger">
+                <span class="burger__line burger__line_first"></span>
+                <span class="burger__line burger__line_second"></span>
+                <span class="burger__line burger__line_third"></span>
+            </div>
+        </div>
+    </header>
+    <div class="intro">
+        <div class="container">
             <div class="header__intro">
                 <h1 class="header__title">
                     Denis Novik
@@ -36,7 +54,7 @@
                 <p class="header__desc">
                     UX | UI designer 24 years old, Minsk
                 </p>
-                <div class="header__lang">
+                <div class="header__lang header__lang-desktop">
                     <a href="#" class="header__lang-ru">RU</a>
                     <span class="header__lang-sep">|</span>
                     <a href="#" class="header__lang-eng">ENG</a>
@@ -44,9 +62,12 @@
             </div>
             <div class="header__img">
                 <img src="img/header-img.jpg" alt="Denis Novik" class="header__img-pic">
+                <img src="img/header-img-mobile.jpg" alt="Denis Novik" class="header__img-pic_mobile ">
             </div>
         </div>
-    </header>
+    </div>
+        
+    
     <section class="about-me">
         <div class="container">
             <h2 class="about-me__title title__section">
@@ -191,5 +212,6 @@
             </p>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
