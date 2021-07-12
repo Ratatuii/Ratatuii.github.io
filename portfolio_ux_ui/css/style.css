@@ -19,7 +19,7 @@
       url('../fonts/icons.svg?i0459j#icons') format('svg');
     font-weight: normal;
     font-style: normal;
-    font-display: block;
+    font-display: swap;
   }
   
   [class^="_icon-"]::before, [class*=" _icon-"]::before {
@@ -364,6 +364,7 @@ textarea {
 
 @font-face {
 	font-family: 'Gilroy-Bold';
+    font-display: swap;
 	src: url('../fonts/fonts/gilroy-bold.eot'); /* IE 9 Compatibility Mode */
 	src: url('../fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
 		url('../fonts/gilroy-bold.woff2') format('woff2'), /* Super Modern Browsers */
@@ -373,6 +374,7 @@ textarea {
 }
 @font-face {
 	font-family: 'Gilroy-Medium';
+    font-display: swap;
 	src: url('../fonts/gilroy-medium.eot'); /* IE 9 Compatibility Mode */
 	src: url('../fonts/gilroy-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
 		url('../fonts/gilroy-medium.woff2') format('woff2'), /* Super Modern Browsers */
