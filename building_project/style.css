@@ -320,6 +320,7 @@ ul{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	justify-content: space-between;
 }
 .documents{
 	text-align: center;
