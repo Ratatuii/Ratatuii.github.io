@@ -573,6 +573,8 @@ a{
     grid-column: span 2;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 .skills__items-pic{
     margin: 0 auto;
@@ -589,6 +591,9 @@ a{
     max-width: 79px;
     margin: 0 auto;
     padding-bottom: 30px;
+}
+.skills__item-star{
+    margin: auto 0 0 0;
 }
 ._icon-Star-gray{
     color: #E5E5E5;
