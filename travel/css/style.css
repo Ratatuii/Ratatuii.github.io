@@ -636,6 +636,8 @@ body{
    padding-bottom: 112px;
    -ms-grid-column-span: 1;
    grid-column: span 1;
+   display: flex;
+   flex-direction: column;
 }
 .benefits__card-ico{
    display: block;
@@ -652,18 +654,19 @@ body{
    padding-bottom: 39px;
 }
 .benefits__card-more{
+   max-width: 200px;
    font-size: 16px;
    line-height: 24px;
    color: #006DFE;
+   margin: auto 0 0 0;
    text-decoration: none;
-   padding-right: 59px;
-   background: url(../img/arrow-ico.svg) no-repeat 90% 7px;
+   background: url(../img/arrow-ico.svg) no-repeat 90% 10px;
    -webkit-transition: .2s all;
    -o-transition: .2s all;
    transition: .2s all;
 }
 .benefits__card-more:hover, .benefits__card-more:focus{
-   background: url(../img/arrow-ico.svg) no-repeat right 7px;
+   background: url(../img/arrow-ico.svg) no-repeat right 10px;
 }
 /* Benefits style end */
 
